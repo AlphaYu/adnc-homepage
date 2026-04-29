@@ -60,9 +60,7 @@ main {
 }
 
 .site-header {
-  position: sticky;
-  top: 16px;
-  z-index: 20;
+  position: static;
   display: flex;
   align-items: center;
   justify-content: space-between;

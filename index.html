@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fcaf3b">
+    <meta name="robots" content="index, follow">
+    <meta
+      name="description"
+      content="ADNC is an open-source .NET 8 distributed application framework and reference architecture for modular monoliths, microservices, gateways, service discovery, caching, messaging, observability, and deployment."
+    >
+    <meta
+      name="keywords"
+      content="ADNC, .NET 8, distributed application framework, microservices, modular monolith, reference architecture, Ocelot, Consul, Redis, RabbitMQ, CAP, EF Core, Dapper"
+    >
+    <meta name="author" content="ADNC">
+    <meta name="application-name" content="ADNC">
+    <link rel="canonical" href="https://aspdotnetcore.net/">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ADNC">
+    <meta property="og:title" content="ADNC - Open-Source .NET 8 Distributed Application Architecture">
+    <meta
+      property="og:description"
+      content="A pragmatic .NET 8 framework and working reference implementation for modular monoliths, distributed applications, and microservice systems."
+    >
+    <meta property="og:url" content="https://aspdotnetcore.net/">
+    <meta property="og:image" content="https://aspdotnetcore.net/docs/assets/images/adnc-github.png">
+    <meta property="og:image:alt" content="ADNC .NET 8 distributed application architecture">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ADNC - Open-Source .NET 8 Distributed Application Architecture">
+    <meta
+      name="twitter:description"
+      content="A pragmatic .NET 8 reference architecture for modular monoliths, distributed applications, and microservice systems."
+    >
+    <meta name="twitter:image" content="https://aspdotnetcore.net/docs/assets/images/adnc-github.png">
+    <title>ADNC - Open-Source .NET 8 Distributed Application Framework</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "ADNC",
+        "description": "ADNC is an open-source .NET 8 distributed application framework and reference architecture for modular monoliths, distributed applications, and microservice systems.",
+        "codeRepository": "https://github.com/AlphaYu/Adnc",
+        "programmingLanguage": "C#",
+        "runtimePlatform": ".NET 8",
+        "license": "https://github.com/AlphaYu/Adnc/blob/main/LICENSE",
+        "url": "https://aspdotnetcore.net/",
+        "isAccessibleForFree": true,
+        "keywords": [
+          ".NET 8",
+          "distributed application framework",
+          "microservices",
+          "modular monolith",
+          "reference architecture",
+          "Ocelot",
+          "Consul",
+          "Redis",
+          "RabbitMQ",
+          "CAP",
+          "EF Core",
+          "Dapper"
+        ],
+        "sameAs": [
+          "https://github.com/AlphaYu/Adnc",
+          "https://docs.aspdotnetcore.net",
+          "https://online.aspdotnetcore.net",
+          "https://code.aspdotnetcore.net"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ADNC home">
+        <img src="./assets/images/logo-small.png" alt="ADNC logo">
+        <span>ADNC</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="https://docs.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path>
+            <path d="M8 7h8M8 11h8M8 15h5"></path>
+          </svg>
+          <span>Docs</span>
+        </a>
+        <a href="https://code.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m8 9-4 3 4 3"></path>
+            <path d="m16 9 4 3-4 3"></path>
+            <path d="m14 5-4 14"></path>
+          </svg>
+          <span>Code</span>
+        </a>
+        <a href="https://online.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+          <span>Online</span>
+        </a>
+        <a href="https://github.com/AlphaYu/Adnc">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M9 19c-4 1.2-4-2-5.5-2.5"></path>
+            <path d="M15 22v-3.5c0-1 .1-1.5-.5-2 3-.3 6-1.5 6-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.8 11.8 0 0 0-6.2 0C7.1 3.7 6.1 4 6.1 4A4.3 4.3 0 0 0 6 7.2a4.7 4.7 0 0 0-1.3 3.3c0 4.5 3 5.7 6 6-.6.5-.7 1.2-.7 2V22"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://twitter.com/xyz199809">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 4h4.7l4.2 5.9L18 4h2.4l-6.4 7.4L21 21h-4.7l-4.6-6.5L6 21H3.6l7-8.1L4 4Z"></path>
+          </svg>
+          <span>Twitter</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Open-source reference architecture</p>
+          <h1>Build .NET systems with real distributed boundaries.</h1>
+          <p class="hero-text">
+            ADNC is a pragmatic .NET 8 framework and working reference implementation
+            for modular monoliths, distributed applications, and microservice systems.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="https://docs.aspdotnetcore.net">Read Docs</a>
+            <a class="button secondary" href="https://github.com/AlphaYu/Adnc">Explore GitHub</a>
+          </div>
+        </div>
+
+        <aside class="signal-panel" aria-label="ADNC project snapshot">
+          <div class="signal-header">
+            <span></span>
+            <strong>Architecture signal</strong>
+          </div>
+          <div class="signal-body">
+            <div class="signal-primary">
+              <span>Runtime</span>
+              <strong>.NET 8</strong>
+            </div>
+            <div class="signal-grid">
+              <div>
+                <span>Gateway</span>
+                <strong>Ocelot</strong>
+              </div>
+              <div>
+                <span>Discovery</span>
+                <strong>Consul/K8s</strong>
+              </div>
+              <div>
+                <span>Messaging</span>
+                <strong>CAP + RabbitMQ</strong>
+              </div>
+              <div>
+                <span>Cache</span>
+                <strong>Redis</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="resource-bar" aria-label="ADNC links">
+        <a class="resource-card featured" href="https://docs.aspdotnetcore.net">
+          <span class="resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path>
+              <path d="M8 7h8M8 11h8M8 15h5"></path>
+            </svg>
+          </span>
+          <span class="resource-label">Docs</span>
+          <strong>Start from the architecture guides</strong>
+          <small>Quick start, Docker deployment, service layers, auth, cache, events, tracing.</small>
+          <em aria-hidden="true">Read guides</em>
+        </a>
+        <a class="resource-card" href="https://code.aspdotnetcore.net">
+          <span class="resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m8 9-4 3 4 3"></path>
+              <path d="m16 9 4 3-4 3"></path>
+              <path d="m14 5-4 14"></path>
+            </svg>
+          </span>
+          <span class="resource-label">Code</span>
+          <strong>Generate and shape service code</strong>
+          <small>Development support for teams adopting ADNC conventions.</small>
+          <em aria-hidden="true">Open tool</em>
+        </a>
+        <a class="resource-card" href="https://online.aspdotnetcore.net">
+          <span class="resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+            </svg>
+          </span>
+          <span class="resource-label">Online</span>
+          <strong>Inspect the running ecosystem</strong>
+          <small>Explore the demo experience and companion admin front-end.</small>
+          <em aria-hidden="true">View demo</em>
+        </a>
+        <a class="resource-card" href="https://github.com/AlphaYu/Adnc">
+          <span class="resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 19c-4 1.2-4-2-5.5-2.5"></path>
+              <path d="M15 22v-3.5c0-1 .1-1.5-.5-2 3-.3 6-1.5 6-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.8 11.8 0 0 0-6.2 0C7.1 3.7 6.1 4 6.1 4A4.3 4.3 0 0 0 6 7.2a4.7 4.7 0 0 0-1.3 3.3c0 4.5 3 5.7 6 6-.6.5-.7 1.2-.7 2V22"></path>
+            </svg>
+          </span>
+          <span class="resource-label">GitHub</span>
+          <strong>Study the source and contribute</strong>
+          <small>Framework packages, gateway, demo services, database scripts, and deployment assets.</small>
+          <em aria-hidden="true">Browse repo</em>
+        </a>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <p class="eyebrow">Why ADNC</p>
+          <h2>It focuses on the parts that usually fail after the demo works.</h2>
+        </div>
+        <div class="principles">
+          <article>
+            <div class="principle-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h6v6H4zM14 5h6v6h-6zM14 15h6v4h-6zM10 10h4M7 13v3a2 2 0 0 0 2 2h5"></path>
+              </svg>
+            </div>
+            <div>
+              <small>Boundary design</small>
+              <h3>Modular first, distributed when necessary</h3>
+              <p>Define service boundaries before deployment boundaries become the expensive part of the system.</p>
+            </div>
+          </article>
+          <article>
+            <div class="principle-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v18M5 7h14M5 17h14"></path>
+                <path d="M7 7v10M17 7v10"></path>
+              </svg>
+            </div>
+            <div>
+              <small>Shared platform</small>
+              <h3>Infrastructure is shared</h3>
+              <p>Centralize cross-cutting concerns such as authentication, cache, repositories, remote calls, events, logs, and health checks.</p>
+            </div>
+          </article>
+          <article>
+            <div class="principle-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4 5 8v8l7 4 7-4V8l-7-4Z"></path>
+                <path d="m9 12 2 2 4-5"></path>
+              </svg>
+            </div>
+            <div>
+              <small>Service ownership</small>
+              <h3>Business behavior stays owned</h3>
+              <p>Keep domain decisions inside service-specific application and domain layers instead of hiding them in a platform.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture-section">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture at a glance</p>
+          <h2>Gateway, infrastructure packages, shared service layers, and demo services in one repository.</h2>
+        </div>
+        <div class="architecture-board">
+          <figure>
+            <img
+              src="./assets/images/adnc_framework-e1682145003197.png"
+              alt="ADNC framework architecture diagram"
+            >
+          </figure>
+          <div class="layer-stack">
+            <article>
+              <span>01</span>
+              <h3>Gateway</h3>
+              <p>Ocelot routing, authentication integration, Consul provider, and resilience policies.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Infrastructure</h3>
+              <p>Reusable Consul, Redis, repository, event bus, ID generation, helper, and core packages.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Shared Service Layer</h3>
+              <p>Common application, domain, repository, remote-call, and Web API building blocks.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Demo Services</h3>
+              <p>Business services that show layered, compact, and DDD-oriented structures side by side.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capabilities-section">
+        <div class="section-heading">
+          <p class="eyebrow">Core capabilities</p>
+          <h2>Production concerns treated as architecture, not afterthoughts.</h2>
+        </div>
+        <div class="capability-list">
+          <span>API gateway</span>
+          <span>Service discovery</span>
+          <span>Centralized configuration</span>
+          <span>HTTP + gRPC calls</span>
+          <span>Event integration</span>
+          <span>EF Core + Dapper</span>
+          <span>Unit of Work</span>
+          <span>Redis cache</span>
+          <span>JWT security</span>
+          <span>Tracing and logs</span>
+          <span>Health checks</span>
+          <span>Polly resilience</span>
+        </div>
+      </section>
+
+      <section class="section demo-section">
+        <div class="section-heading">
+          <p class="eyebrow">Demo services</p>
+          <h2>Five business services make architectural trade-offs visible.</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <div class="service-top">
+              <span class="service-code">ADM</span>
+              <span class="service-type">Layered</span>
+            </div>
+            <h3>Admin</h3>
+            <p>Users, roles, permissions, dictionaries, and configuration.</p>
+            <small>Identity and system administration</small>
+          </article>
+          <article>
+            <div class="service-top">
+              <span class="service-code">MNT</span>
+              <span class="service-type">Layered</span>
+            </div>
+            <h3>Maint</h3>
+            <p>Logs, audits, and operations management.</p>
+            <small>Audit trail and operations support</small>
+          </article>
+          <article>
+            <div class="service-top">
+              <span class="service-code">CST</span>
+              <span class="service-type">Compact</span>
+            </div>
+            <h3>Cust</h3>
+            <p>Customer management in a compact single-project service.</p>
+            <small>Minimal service structure</small>
+          </article>
+          <article>
+            <div class="service-top">
+              <span class="service-code">ORD</span>
+              <span class="service-type">DDD</span>
+            </div>
+            <h3>Ord</h3>
+            <p>Order management with explicit domain boundaries.</p>
+            <small>Domain-oriented order flow</small>
+          </article>
+          <article>
+            <div class="service-top">
+              <span class="service-code">WHS</span>
+              <span class="service-type">DDD</span>
+            </div>
+            <h3>Whse</h3>
+            <p>Warehouse management with a domain-oriented service shape.</p>
+            <small>Inventory and warehouse domain</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">Start with the reference implementation</p>
+        <h2>Study the system, run the demo, then adopt the pieces that fit your team.</h2>
+        <div class="hero-actions">
+          <a class="button primary" href="https://docs.aspdotnetcore.net">Open Documentation</a>
+          <a class="button secondary" href="https://online.aspdotnetcore.net">View Online Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top" aria-label="ADNC home">
+        <img src="./assets/images/logo-small.png" alt="ADNC logo">
+        <span>ADNC</span>
+      </a>
+      <nav aria-label="Footer navigation">
+        <a href="https://docs.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path>
+            <path d="M8 7h8M8 11h8M8 15h5"></path>
+          </svg>
+          <span>Docs</span>
+        </a>
+        <a href="https://code.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m8 9-4 3 4 3"></path>
+            <path d="m16 9 4 3-4 3"></path>
+            <path d="m14 5-4 14"></path>
+          </svg>
+          <span>Code</span>
+        </a>
+        <a href="https://online.aspdotnetcore.net">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+          <span>Online</span>
+        </a>
+        <a href="https://github.com/AlphaYu/Adnc">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M9 19c-4 1.2-4-2-5.5-2.5"></path>
+            <path d="M15 22v-3.5c0-1 .1-1.5-.5-2 3-.3 6-1.5 6-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.8 11.8 0 0 0-6.2 0C7.1 3.7 6.1 4 6.1 4A4.3 4.3 0 0 0 6 7.2a4.7 4.7 0 0 0-1.3 3.3c0 4.5 3 5.7 6 6-.6.5-.7 1.2-.7 2V22"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://twitter.com/xyz199809">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 4h4.7l4.2 5.9L18 4h2.4l-6.4 7.4L21 21h-4.7l-4.6-6.5L6 21H3.6l7-8.1L4 4Z"></path>
+          </svg>
+          <span>Twitter</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -7,11 +7,11 @@
     <meta name="robots" content="index, follow">
     <meta
       name="description"
-      content="ADNC is an open-source .NET 8 distributed application framework and reference architecture for modular monoliths, microservices, gateways, service discovery, caching, messaging, observability, and deployment."
+      content="ADNC is an open-source .NET 8 framework for building modular business systems that can evolve from modular monoliths into distributed microservices."
     >
     <meta
       name="keywords"
-      content="ADNC, .NET 8, distributed application framework, microservices, modular monolith, reference architecture, Ocelot, Consul, Redis, RabbitMQ, CAP, EF Core, Dapper"
+      content="ADNC, .NET 8, modular monolith, distributed microservices, reference implementation, Ocelot, Consul, Redis, RabbitMQ, CAP, EF Core, Dapper, SkyAPM, SkyWalking"
     >
     <meta name="author" content="ADNC">
     <meta name="application-name" content="ADNC">
@@ -23,18 +23,18 @@
     <meta property="og:title" content="ADNC - Open-Source .NET 8 Distributed Application Architecture">
     <meta
       property="og:description"
-      content="A pragmatic .NET 8 framework and working reference implementation for modular monoliths, distributed applications, and microservice systems."
+      content="A pragmatic .NET 8 framework for modular monoliths to evolve seamlessly into distributed microservices."
     >
     <meta property="og:url" content="https://aspdotnetcore.net/">
-    <meta property="og:image" content="https://aspdotnetcore.net/docs/assets/images/adnc-github.png">
+    <meta property="og:image" content="https://aspdotnetcore.net/assets/images/adnc-github.png">
     <meta property="og:image:alt" content="ADNC .NET 8 distributed application architecture">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ADNC - Open-Source .NET 8 Distributed Application Architecture">
     <meta
       name="twitter:description"
-      content="A pragmatic .NET 8 reference architecture for modular monoliths, distributed applications, and microservice systems."
+      content="A pragmatic .NET 8 framework for modular monoliths to evolve seamlessly into distributed microservices."
     >
-    <meta name="twitter:image" content="https://aspdotnetcore.net/docs/assets/images/adnc-github.png">
+    <meta name="twitter:image" content="https://aspdotnetcore.net/assets/images/adnc-github.png">
     <title>ADNC - Open-Source .NET 8 Distributed Application Framework</title>
     <link rel="stylesheet" href="./styles.css">
     <script type="application/ld+json">
@@ -42,7 +42,7 @@
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
         "name": "ADNC",
-        "description": "ADNC is an open-source .NET 8 distributed application framework and reference architecture for modular monoliths, distributed applications, and microservice systems.",
+        "description": "ADNC is an open-source .NET 8 framework for building modular business systems that can evolve from modular monoliths into distributed microservices.",
         "codeRepository": "https://github.com/AlphaYu/Adnc",
         "programmingLanguage": "C#",
         "runtimePlatform": ".NET 8",
@@ -51,9 +51,8 @@
         "isAccessibleForFree": true,
         "keywords": [
           ".NET 8",
-          "distributed application framework",
-          "microservices",
           "modular monolith",
+          "distributed microservices",
           "reference architecture",
           "Ocelot",
           "Consul",
@@ -120,11 +119,12 @@
     <main id="top">
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Open-source reference architecture</p>
-          <h1>Build .NET systems with real distributed boundaries.</h1>
+          <p class="eyebrow">Open-source .NET 8 framework</p>
+          <h1>Start modular. Scale only when the system needs it.</h1>
           <p class="hero-text">
-            ADNC is a pragmatic .NET 8 framework and working reference implementation
-            for modular monoliths, distributed applications, and microservice systems.
+          ADNC is a pragmatic .NET 8 framework for modular monoliths,
+          distributed microservices, production-grade infrastructure, and
+          a working reference implementation.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="https://docs.aspdotnetcore.net/wiki/en/02-quickstart">Quickstart</a>
@@ -148,8 +148,8 @@
                 <strong>Ocelot</strong>
               </div>
               <div>
-                <span>Discovery</span>
-                <strong>Consul/K8s</strong>
+                <span>Config Center</span>
+                <strong>Consul</strong>
               </div>
               <div>
                 <span>Messaging</span>
@@ -219,7 +219,7 @@
       <section class="section two-column">
         <div>
           <p class="eyebrow">Why ADNC</p>
-          <h2>It focuses on the parts that usually fail after the demo works.</h2>
+          <h2>It focuses on the boundary challenges that make business systems hard.</h2>
         </div>
         <div class="principles">
           <article>
@@ -229,9 +229,9 @@
               </svg>
             </div>
             <div>
-              <small>Boundary design</small>
-              <h3>Modular first, distributed when necessary</h3>
-              <p>Define service boundaries before deployment boundaries become the expensive part of the system.</p>
+              <small>Modular monolith first</small>
+              <h3>Strict boundaries from day one</h3>
+              <p>Define service ownership and module boundaries before deployment boundaries become expensive.</p>
             </div>
           </article>
           <article>
@@ -242,9 +242,9 @@
               </svg>
             </div>
             <div>
-              <small>Shared platform</small>
-              <h3>Infrastructure is shared</h3>
-              <p>Centralize cross-cutting concerns such as authentication, cache, repositories, remote calls, events, logs, and health checks.</p>
+              <small>Strategic evolution</small>
+              <h3>Extract services when scale justifies the cost</h3>
+              <p>Start pragmatic, then move toward distributed deployment when the operational return is clear.</p>
             </div>
           </article>
           <article>
@@ -255,9 +255,9 @@
               </svg>
             </div>
             <div>
-              <small>Service ownership</small>
-              <h3>Business behavior stays owned</h3>
-              <p>Keep domain decisions inside service-specific application and domain layers instead of hiding them in a platform.</p>
+              <small>Enterprise infrastructure</small>
+              <h3>Production building blocks for .NET 8</h3>
+              <p>Use consistent abstractions for gateway routing, discovery, configuration, auth, events, cache, observability, and resilience.</p>
             </div>
           </article>
         </div>
@@ -266,7 +266,7 @@
       <section class="section architecture-section">
         <div class="section-heading">
           <p class="eyebrow">Architecture at a glance</p>
-          <h2>Gateway, infrastructure packages, shared service layers, and demo services in one repository.</h2>
+          <h2>Gateway, reusable infrastructure, shared service layers, and demo services in one system.</h2>
         </div>
         <div class="architecture-board">
           <figure>
@@ -279,12 +279,12 @@
             <article>
               <span>01</span>
               <h3>Gateway</h3>
-              <p>Ocelot routing, authentication integration, Consul provider, and resilience policies.</p>
+              <p>Ocelot-based API gateway with routing, authentication integration, Consul provider, and resilience policies.</p>
             </article>
             <article>
               <span>02</span>
               <h3>Infrastructure</h3>
-              <p>Reusable Consul, Redis, repository, event bus, ID generation, helper, and core packages.</p>
+              <p>Reusable packages for Consul, Redis, repositories, event bus, ID generation, helpers, and core primitives.</p>
             </article>
             <article>
               <span>03</span>
@@ -303,28 +303,37 @@
       <section class="section capabilities-section">
         <div class="section-heading">
           <p class="eyebrow">Core capabilities</p>
-          <h2>Production concerns treated as architecture, not afterthoughts.</h2>
+          <h2>Production concerns treated as architectural requirements, not afterthoughts.</h2>
         </div>
         <div class="capability-list">
-          <span>API gateway</span>
-          <span>Service discovery</span>
-          <span>Centralized configuration</span>
-          <span>HTTP + gRPC calls</span>
-          <span>Event integration</span>
-          <span>EF Core + Dapper</span>
+          <span>Ocelot gateway</span>
+          <span>Consul discovery</span>
+          <span>Consul configuration</span>
+          <span>Refit HTTP clients</span>
+          <span>gRPC clients</span>
+          <span>CAP events</span>
+          <span>RabbitMQ</span>
+          <span>EF Core</span>
+          <span>Dapper</span>
+          <span>MySQL + SQL Server</span>
+          <span>MongoDB</span>
           <span>Unit of Work</span>
           <span>Redis cache</span>
+          <span>Distributed locks</span>
+          <span>Bloom filters</span>
           <span>JWT security</span>
-          <span>Tracing and logs</span>
-          <span>Health checks</span>
+          <span>NLog + Loki</span>
+          <span>SkyAPM + SkyWalking</span>
+          <span>HealthChecks</span>
           <span>Polly resilience</span>
+          <span>Central Package Management</span>
         </div>
       </section>
 
       <section class="section demo-section">
         <div class="section-heading">
           <p class="eyebrow">Demo services</p>
-          <h2>Five business services make architectural trade-offs visible.</h2>
+          <h2>Five business services show layered, compact, and DDD-oriented service structures.</h2>
         </div>
         <div class="service-grid">
           <article>
@@ -333,8 +342,8 @@
               <span class="service-type">Layered</span>
             </div>
             <h3>Admin</h3>
-            <p>Users, roles, permissions, dictionaries, and configuration.</p>
-            <small>Identity and system administration</small>
+            <p>Organization, users, roles, permissions, dictionaries, and configuration.</p>
+            <small>Classic layered architecture with separated application contracts</small>
           </article>
           <article>
             <div class="service-top">
@@ -343,7 +352,7 @@
             </div>
             <h3>Maint</h3>
             <p>Logs, audits, and operations management.</p>
-            <small>Audit trail and operations support</small>
+            <small>Classic layered architecture with contracts merged into the application layer</small>
           </article>
           <article>
             <div class="service-top">
@@ -351,8 +360,8 @@
               <span class="service-type">Compact</span>
             </div>
             <h3>Cust</h3>
-            <p>Customer management in a compact single-project service.</p>
-            <small>Minimal service structure</small>
+            <p>Customer management.</p>
+            <small>Minimal single-project service</small>
           </article>
           <article>
             <div class="service-top">
@@ -360,8 +369,8 @@
               <span class="service-type">DDD</span>
             </div>
             <h3>Ord</h3>
-            <p>Order management with explicit domain boundaries.</p>
-            <small>Domain-oriented order flow</small>
+            <p>Order management.</p>
+            <small>DDD-style service with a domain layer</small>
           </article>
           <article>
             <div class="service-top">
@@ -369,15 +378,15 @@
               <span class="service-type">DDD</span>
             </div>
             <h3>Whse</h3>
-            <p>Warehouse management with a domain-oriented service shape.</p>
-            <small>Inventory and warehouse domain</small>
+            <p>Warehouse management.</p>
+            <small>DDD-style service with a domain layer</small>
           </article>
         </div>
       </section>
 
       <section class="final-cta">
         <p class="eyebrow">Start with the reference implementation</p>
-        <h2>Study the system, run the demo, then adopt the pieces that fit your team.</h2>
+        <h2>Follow the quick start, run the demo, then adopt the infrastructure and service patterns that fit your team.</h2>
         <div class="hero-actions">
           <a class="button primary" href="https://docs.aspdotnetcore.net">Open Documentation</a>
           <a class="button secondary" href="https://online.aspdotnetcore.net">View Online Demo</a>
